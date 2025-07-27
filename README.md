@@ -1,10 +1,6 @@
 # ĐỒ ÁN CUỐI KÌ: PHÂN LOẠI VÀ XỬ LÝ TRÁI CÂY TRONG MÔI TRƯỜNG TỰ NHIÊN  
-## Thông tin sinh viên:  
-- Họ và tên: Trần Đại Phát
-- MSSV: 2374802010379
-- Trường: Van Lang University
-- Môn học: Nhập môn Xử lý ảnh số
-- GVHD: Đỗ Hữu Quân
-- Năm học: 2024 - 2025
+## Mô tả đồ án:  
+Đồ án này sử dụng Yolov11 để phát hiện và đếm trái cây trong môi trường tự nhiên từ hình ảnh được tải lên. Ứng dụng được xây dựng với HTML và CSS đơn giản, kết hợp với Flask để tạo ra một trang web với giao diện dễ nhìn, dễ thao tác.  
+
 
 
