@@ -108,8 +108,8 @@ git clone https://github.com/trdphatphattran/Digital-Image-Processing.git
 <img width="1345" height="656" alt="image" src="https://github.com/user-attachments/assets/e50ddfb5-0581-471f-b978-4cf9b9f14443" />
 
 ## Các tài liệu có thể tham khảo  
-[Yolov11](https://docs.ultralytics.com/vi/models/yolo11/)  
-[OpenCV](https://opencv.org/)  
+- [Yolov11](https://docs.ultralytics.com/vi/models/yolo11/)  
+- [OpenCV](https://opencv.org/)  
 
 
 
