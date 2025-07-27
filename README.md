@@ -22,7 +22,23 @@
  
 ### Bước 2: Tìm ảnh của các loại quả  
 - Có thể tìm trực tiếp trên Internet, chụp ngoài tự nhiên hoặc dataset có sẵn của Kaggle.
-- 
+
+### Bước 3: Gán nhãn ảnh bằng Roboflow  
+- Ví dụ minh họa:
+<img width="656" height="653" alt="image" src="https://github.com/user-attachments/assets/3e67b9da-817b-4509-a08c-ae6672fc26f3" />
+
+<img width="1160" height="652" alt="image" src="https://github.com/user-attachments/assets/a2f08fc2-b646-422a-b31e-3110df4ac1a7" />  
+
+### Bước 4:  Huấn luyện mô hình với Google Colab (VSCode tương tự nhưng có thể lâu hơn)  
+- Trước tiên, cần kết nối Colab với GPU T4 có sẵn trên Colab giúp quá trình huấn luyện nhanh chóng hơn.
+- Dùng câu lệnh sau để kiểm tra
+```bash
+!nvidia-smi
+```
+
+
+
+
   
     
 
