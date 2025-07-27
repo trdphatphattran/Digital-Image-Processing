@@ -86,8 +86,35 @@ files.download('runs/detect/train/weights/best.pt')
 <img width="545" height="263" alt="image" src="https://github.com/user-attachments/assets/9db75b7b-109c-4ffb-b08d-5ad519675160" />  
 
 ## Hướng dẫn chạy thử dự án  
+### Bước 1: Lấy dự án về máy cá nhân và lưu trong folder bất kỳ  
 ```bash
-git clone 
+git clone https://github.com/trdphatphattran/Digital-Image-Processing.git
+```
+
+### Bước 2: Dùng VSCode chạy thử dự án  
+- Mở VSCode, vào thư mục chứ code vừa lưu về.
+- Tìm đến file app.py và run.
+
+### Bước 3: Test các chức năng  
+- Trong giao diện, chọn 1 hoặc nhiều hình ảnh trái cây gắn vào và ấn vào "Xử lý ảnh", ví dụ:
+<img width="1262" height="778" alt="image" src="https://github.com/user-attachments/assets/8a479bfd-32e4-496e-ae2c-143228aec6a3" />
+
+- Xem kết quả được tìm thấy và số lượng của chúng, ví dụ:
+<img width="840" height="773" alt="image" src="https://github.com/user-attachments/assets/7ee3f0c9-9f1d-4e95-9bcc-8ca36be7df74" />
+
+<img width="425" height="402" alt="image" src="https://github.com/user-attachments/assets/525a97df-9c95-4515-980f-171a13080820" />  
+
+- Thử các chức năng khác, trong "Chế độ xử lý" chọn "Đối tượng cụ thể", sau đó nhập tên trái đó vào; bên "Chức năng xử lý" có thể chọn "Phát hiện biên" gồm 2 chế độ khác nhau giúp phát hiện vị trí rõ ràng của từng quả trong ảnh lớn đó; ngoài ra có thể ấn vào "Công dụng" hoặc "Dinh dưỡng", ví dụ:
+<img width="1345" height="656" alt="image" src="https://github.com/user-attachments/assets/e50ddfb5-0581-471f-b978-4cf9b9f14443" />
+
+
+
+
+
+
+
+
+
 
 
 
