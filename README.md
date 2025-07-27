@@ -82,6 +82,9 @@ from google.colab import files
 files.download('runs/detect/train/weights/best.pt')
 ```
 
+## Cấu trúc thư mục  
+<img width="545" height="263" alt="image" src="https://github.com/user-attachments/assets/9db75b7b-109c-4ffb-b08d-5ad519675160" />  
+
 
 
 
