@@ -2,5 +2,31 @@
 ## Mô tả đồ án:  
 Đồ án này sử dụng Yolov11 để phát hiện và đếm trái cây trong môi trường tự nhiên từ hình ảnh được tải lên. Ứng dụng được xây dựng với HTML và CSS đơn giản, kết hợp với Flask để tạo ra một trang web với giao diện dễ nhìn, dễ thao tác.  
 
+## Các tính năng chính:  
+- Phát hiện ra trái cây: Dùng Yolov11 để phân loại ra 13 loại trái cây đã được huấn luyện.
+- Đếm số lượng có được của từng loại quả.
+- Cho biết dinh dưỡng và công dụng của từng trái.
+- Có các chức năng khác như:
+  + Nếu trong một ảnh có nhiều trái, thì có thể gọi ra một trái để hiển thị lên màn hình.
+  + Dùng xác định biên để xác định có bao nhiêu trái trong ảnh và vị trí của mỗi trái.
+ 
+## Cách huấn luyện
+### Bước 1: Xác định chủ đề cần làm và lập ra kế hoạch:  
+- Chủ đề: Phân loại và xử lý trái cây.  
+- Mục tiêu cần làm:  
+  + Tìm những loại quả thường gặp trong tự nhiên.  
+  + Tìm các ảnh của các loại quả đó (càng nhiều ảnh càng tốt).  
+  + Gán nhãn ảnh (có thể dùng Roboflow hoặc Kaggle).  
+  + Huấn luyện mô hình với phiên bản Yolov11 (có thể huấn luyện trên Google Colab hay VSCode).
+  + Sử dụng mô hình học tốt nhất best.pt sau khi huấn luyện xong.
+ 
+### Bước 2: Tìm ảnh của các loại quả  
+- Có thể tìm trực tiếp trên Internet, chụp ngoài tự nhiên hoặc dataset có sẵn của Kaggle.
+- 
+  
+    
+
+
+
 
 
