@@ -36,6 +36,22 @@
 !nvidia-smi
 ```
 
+- Kết quả hiện ra:
+<img width="788" height="341" alt="image" src="https://github.com/user-attachments/assets/e4cbd453-3bf9-4d32-bd08-4eda95d19876" />  
+
+Như vậy có thể tiến hành huấn luyện.  
+
+- Tiếp theo cần kiểm tra xem phiên bản Ultralytics và Python có phù hợp với nhau hay không:
+```bash
+%pip install "ultralytics<=8.3.40" supervision roboflow
+# prevent ultralytics from tracking your activity
+!yolo settings sync=False
+import ultralytics
+ultralytics.checks()
+```
+
+
+
 
 
 
