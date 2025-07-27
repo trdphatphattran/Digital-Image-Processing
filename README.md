@@ -107,6 +107,9 @@ git clone https://github.com/trdphatphattran/Digital-Image-Processing.git
 - Thử các chức năng khác, trong "Chế độ xử lý" chọn "Đối tượng cụ thể", sau đó nhập tên trái đó vào; bên "Chức năng xử lý" có thể chọn "Phát hiện biên" gồm 2 chế độ khác nhau giúp phát hiện vị trí rõ ràng của từng quả trong ảnh lớn đó; ngoài ra có thể ấn vào "Công dụng" hoặc "Dinh dưỡng", ví dụ:
 <img width="1345" height="656" alt="image" src="https://github.com/user-attachments/assets/e50ddfb5-0581-471f-b978-4cf9b9f14443" />
 
+## Các tài liệu có thể tham khảo  
+https://docs.ultralytics.com/vi/models/yolo11/
+
 
 
 
