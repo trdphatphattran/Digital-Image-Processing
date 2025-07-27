@@ -50,6 +50,40 @@ import ultralytics
 ultralytics.checks()
 ```
 
+- Lấy dataset từ Roboflow về Colab thông qua API
+```bash
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="ILbu6FprpxIeaOUXbk4Q")
+project = rf.workspace("fruit-detector-blc0f").project("fruits-detection-exam")
+version = project.version(13)
+dataset = version.download("yolov11")
+```
+
+- Bắt đầu huấn luyện mô hình:
+```bash
+!pip install -q ultralytics
+from ultralytics import YOLO
+
+model = YOLO('yolo11s.pt')
+model.train(
+    data='/content/Fruits-Detection-Exam-13/data.yaml',
+    epochs=150,
+    imgsz=640,
+    batch=16
+)
+```
+
+### Bước 5: Lấy mô hình học tốt nhất xong thời gian huấn luyện  
+- Tiến hành lưu mô hình về máy hoặc folder mình muốn
+```bash
+from google.colab import files
+files.download('runs/detect/train/weights/best.pt')
+```
+
+
+
 
 
 
