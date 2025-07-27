@@ -75,6 +75,10 @@ model.train(
 )
 ```
 
+- Có thể thay đổi epochs thành 100 hay 200 tùy ý, nhưng không nên ít hơn 100 vì mô hình học không tối ưu.
+- imgsz có thể để mặc định là 640x640.
+- batch size có thể thay đổi thành 4, 8 hoặc 16 tùy vào cấu hình máy và số lượng dataset, nếu dataset ít thì chỉ cần dùng 4 hoặc 8.  
+
 ### Bước 5: Lấy mô hình học tốt nhất xong thời gian huấn luyện  
 - Tiến hành lưu mô hình về máy hoặc folder mình muốn
 ```bash
