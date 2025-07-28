@@ -28,7 +28,7 @@ def allowed_file(filename):
 
 # Load mô hình và dữ liệu
 try:
-    model = YOLO("best.pt")
+    model = YOLO("1.pt")
     logger.info("Model loaded successfully")
 except Exception as e:
     logger.error(f"Error loading model: {e}")
@@ -57,27 +57,24 @@ def lay_thong_tin_excel(ten, loai):
     return ""
 
 # Hàm áp dụng chức năng ảnh
+
+
 def xu_ly_anh(img_np, mode, sub_mode):
-    if mode == "ro-net":
-        pil_img = Image.fromarray(img_np)
-        return np.array(pil_img.filter(ImageFilter.SHARPEN))
+    if mode == "can-bang-sang":  # Sử dụng Histogram Equalization
+        gray = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
+        equalized = cv2.equalizeHist(gray)
+        return cv2.cvtColor(equalized, cv2.COLOR_GRAY2RGB)
 
     elif mode == "sac-bien":
         gray = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
         edges = cv2.Canny(gray, 100, 200)
-
-        # Tăng độ dày biên bằng morphological dilation
         kernel = np.ones((3, 3), np.uint8)
-        edges_thick = cv2.dilate(edges, kernel, iterations=1)
-
+        edges_thick = cv2.dilate(edges, kernel, iterations=2)
         if sub_mode == "grayscale":
-            # Chuyển biên độ dày thành ảnh 3 kênh để có thể hiển thị màu
             return cv2.cvtColor(edges_thick, cv2.COLOR_GRAY2RGB)
-        else:  # Giữ màu gốc, vẽ biên màu trắng
+        else:
             img_out = img_np.copy()
-            # Vẽ biên dày màu trắng lên ảnh gốc
-            # Chỉ thay đổi pixel có màu gốc (tổng các kênh màu > 0) để tránh làm trắng vùng đen hoàn toàn
-            img_out[(edges_thick > 0) & (img_out.sum(axis=2) > 0)] = [255, 255, 255]
+            img_out[edges_thick > 0] = [255, 255, 255]
             return img_out
 
     return img_np
