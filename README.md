@@ -121,6 +121,12 @@ git clone https://github.com/trdphatphattran/Digital-Image-Processing.git
 - [Roboflow](https://roboflow.com/)
 - [Kaggle](https://www.kaggle.com/)
 
+## Thông tin liên lạc  
+- Name: Tran Dai Phat
+- Phone: 0908647977
+- Email:  phattrandai15062005@gmail.com
+
+
 
 
 
