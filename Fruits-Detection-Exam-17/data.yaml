@@ -1,0 +1,13 @@
+train: /content/Fruits-Detection-Exam-17/train/images
+val: /content/Fruits-Detection-Exam-17/valid/images
+test: /content/Fruits-Detection-Exam-17/test/images
+
+nc: 13
+names: ['apple', 'banana', 'dragon fruit', 'grape', 'kiwi', 'lemon', 'lime', 'mango', 'orange', 'papaya', 'pineapple', 'strawberry', 'watermelon']
+
+roboflow:
+  workspace: fruit-detector-blc0f
+  project: fruits-detection-exam
+  version: 17
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fruit-detector-blc0f/fruits-detection-exam/dataset/17
