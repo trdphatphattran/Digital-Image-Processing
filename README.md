@@ -79,7 +79,7 @@ model.train(
 - imgsz có thể để mặc định là 640x640.
 - batch size có thể thay đổi thành 4, 8 hoặc 16 tùy vào cấu hình máy và số lượng dataset, nếu dataset ít thì chỉ cần dùng 4 hoặc 8.  
 
-### Bước 5: Lấy mô hình học tốt nhất xong thời gian huấn luyện  
+### Bước 5: Lấy mô hình học tốt nhất sau thời gian huấn luyện  
 - Tiến hành lưu mô hình về máy hoặc folder mình muốn
 ```bash
 from google.colab import files
